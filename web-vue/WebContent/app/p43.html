@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+
+<div id="app">
+    <ul>
+        <template v-for="book in filterBooks">
+            <li>书名：{{book.name}}</li>
+            <li>作者：{{book.author}}</li>
+        </template>
+    </ul>
+</div>
+
+<script src="../js/vue-2.5.6.js"></script>
+</body>
+<script type="text/javascript">
+    var app=new Vue({
+        el:'#app',
+        data:{
+            books:[
+                {name:'<<Vue.js实战>>',author:'张三'},
+                {name:'<<Javascript语言精粹>>',author:'李四'},
+                {name:'<<Javascript高级设计>>',author:'王五'}
+            ]
+        },
+        computed:{
+            filterBooks:function(){
+                return this.books.filter(function (book){
+                    return book.name.match(/Vue/);
+                })
+            }
+        }
+    })
+</script>
+</html>

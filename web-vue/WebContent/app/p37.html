@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+
+<div id="app">
+    No index:
+    <ul>
+        <li v-for="book in books">{{book.name}}</li>
+    </ul>
+
+    Has index:
+    <ul>
+        <li v-for="(book , idx) in books">{{idx}} - {{book.name}}</li>
+    </ul>
+</div>
+
+<script src="../js/vue-2.5.6.js"></script>
+</body>
+<script type="text/javascript">
+var app=new Vue({
+    el:'#app',
+    data:{
+        books:[
+            {name:'<<Vue.js实战>>'},
+            {name:'<<Javascript语言精粹>>'},
+            {name:'<<Javascript高级设计>>'}
+        ]
+    }
+})
+</script>
+</html>

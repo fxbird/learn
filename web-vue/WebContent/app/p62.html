@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+
+<div id="app">
+    <input type="checkbox"  v-model="toggle" :true-value="value1" :false-value="value2"/>
+    <label>复选框</label>
+    <p>{{toggle}}</p>
+    <p>{{value1}}</p>
+    <p>{{value2}}</p>
+</div>
+
+<script src="../js/vue-2.5.6.js"></script>
+</body>
+<script type="text/javascript">
+    var app=new Vue({
+        el:'#app',
+        data:{
+            toggle:false,
+            value:'a',
+            value2:'b'
+        }
+    })
+</script>
+</html>

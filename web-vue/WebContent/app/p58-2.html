@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+
+<div id="app">
+    <input type="checkbox" v-model="checked"  value="html" id="html"/>
+    <label for="html">HTML</label>
+    <br/>
+    <input type="checkbox" v-model="checked" value="js" id="js">
+    <label for="js">Javascript</label>
+    <br>
+    <input type="checkbox" v-model="checked" value="css" id="css">
+    <label for="css">CSS</label>
+    <br>
+    选择的项是{{checked}}
+</div>
+
+<script src="../js/vue-2.5.6.js"></script>
+</body>
+<script type="text/javascript">
+    var app=new Vue({
+        el:'#app',
+        data:{
+            checked:['html','css']
+        }
+    })
+</script>
+</html>

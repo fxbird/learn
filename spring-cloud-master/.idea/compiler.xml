@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="config-client" />
+        <module name="config-client-eureka" />
+        <module name="config-client-eureka-kafka" />
+        <module name="config-client-eureka-rabbit" />
+        <module name="config-server" />
+        <module name="config-server-eureka" />
+        <module name="config-server-eureka-kafka" />
+        <module name="config-server-eureka-rabbit" />
+        <module name="eureka-server" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="config-client" target="1.8" />
+      <module name="config-client-eureka" target="1.8" />
+      <module name="config-client-eureka-kafka" target="1.8" />
+      <module name="config-client-eureka-rabbit" target="1.8" />
+      <module name="config-server" target="1.8" />
+      <module name="config-server-eureka" target="1.8" />
+      <module name="config-server-eureka-kafka" target="1.8" />
+      <module name="config-server-eureka-rabbit" target="1.8" />
+      <module name="eureka-server" target="1.8" />
+      <module name="spring-cloud-master" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

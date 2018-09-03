@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="app">
+    {{reversedText}}
+</div>
+<script src="../js/vue-2.5.6.js"></script>
+<script type="text/javascript">
+    var app=new Vue({
+        el:'#app',
+        data:{
+            text:'123,456'
+        },
+
+        computed:{
+            reversedText:function () {
+                return this.text.split(',').reverse().join(',')
+            }
+        }
+    })
+</script>
+</body>
+</html>

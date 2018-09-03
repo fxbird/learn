@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/api-gateway/api-gateway.iml" filepath="$PROJECT_DIR$/api-gateway/api-gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/api-gateway-dynamic-route/api-gateway-dynamic-route.iml" filepath="$PROJECT_DIR$/api-gateway-dynamic-route/api-gateway-dynamic-route.iml" />
+      <module fileurl="file://$PROJECT_DIR$/api-gateway-exception/api-gateway-exception.iml" filepath="$PROJECT_DIR$/api-gateway-exception/api-gateway-exception.iml" />
+      <module fileurl="file://$PROJECT_DIR$/config-client/config-client.iml" filepath="$PROJECT_DIR$/config-client/config-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/config-client-eureka/config-client-eureka.iml" filepath="$PROJECT_DIR$/config-client-eureka/config-client-eureka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/config-client-eureka-kafka/config-client-eureka-kafka.iml" filepath="$PROJECT_DIR$/config-client-eureka-kafka/config-client-eureka-kafka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/config-client-eureka-rabbit/config-client-eureka-rabbit.iml" filepath="$PROJECT_DIR$/config-client-eureka-rabbit/config-client-eureka-rabbit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/config-server/config-server.iml" filepath="$PROJECT_DIR$/config-server/config-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/config-server-eureka/config-server-eureka.iml" filepath="$PROJECT_DIR$/config-server-eureka/config-server-eureka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/config-server-eureka-kafka/config-server-eureka-kafka.iml" filepath="$PROJECT_DIR$/config-server-eureka-kafka/config-server-eureka-kafka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/config-server-eureka-rabbit/config-server-eureka-rabbit.iml" filepath="$PROJECT_DIR$/config-server-eureka-rabbit/config-server-eureka-rabbit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka-server/eureka-server.iml" filepath="$PROJECT_DIR$/eureka-server/eureka-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka-server-ha/eureka-server-ha.iml" filepath="$PROJECT_DIR$/eureka-server-ha/eureka-server-ha.iml" />
+      <module fileurl="file://$PROJECT_DIR$/feign-consumer/feign-consumer.iml" filepath="$PROJECT_DIR$/feign-consumer/feign-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hello-service/hello-service.iml" filepath="$PROJECT_DIR$/hello-service/hello-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hello-service-api/hello-service-api.iml" filepath="$PROJECT_DIR$/hello-service-api/hello-service-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hystrix-dashboard/hystrix-dashboard.iml" filepath="$PROJECT_DIR$/hystrix-dashboard/hystrix-dashboard.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ribbon-consumer/ribbon-consumer.iml" filepath="$PROJECT_DIR$/ribbon-consumer/ribbon-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-cloud-master.iml" filepath="$PROJECT_DIR$/spring-cloud-master.iml" />
+    </modules>
+  </component>
+</project>

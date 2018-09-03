@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+
+<div id="app">
+    <ele></ele>
+</div>
+
+<script src="../js/vue-2.5.6.js"></script>
+</body>
+<script type="text/javascript">
+    var Child = {
+        render: function (createElement) {
+            return createElement('p', 'text')
+        }
+    }
+
+    Vue.component('ele', {
+        render: function (createElement) {
+            return createElement('div', Array.apply(null, {
+                length: 50
+            }).map(function () {
+                return createElement(Child)
+            }))
+        }
+    })
+
+    new Vue({
+        el: '#app'
+    })
+</script>
+</html>
