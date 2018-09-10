@@ -20,12 +20,20 @@ labels={
     'addr':'address'
 }
 
-name=input('Name:')
+# name=input('Name:')
+#
+# request=input('Phone number (p) or address (a)? ')
+#
+# if request=='p': key='phone'
+#
+# if request=='a' : key='addr'
+#
+# if name in people:print("{}'s {} is {}".format(name,labels[key],people[name][key]))
 
-request=input('Phone number (p) or address (a)? ')
+x=['Hello','World']
+y=x
+y[1]='Python'
+print(x)
 
-if request=='p': key='phone'
-
-if request=='a' : key='addr'
-
-if name in people:print("{}'s {} is {}".format(name,labels[key],people[name][key]))
+del x
+print(y)
