@@ -1,0 +1,7 @@
+f=open(r'c:\temp\somefile.txt','w')
+f.write('01234567890123456789')
+f.seek(5)
+f.write('Hello, World!')
+f.close()
+f=open(r'c:\temp\somefile.txt')
+print(f.read())
