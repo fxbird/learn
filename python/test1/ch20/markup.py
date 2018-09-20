@@ -3,19 +3,24 @@ from handlers import *
 from util import *
 from rules import *
 
+
 class Parser:
     """
     A Parser reads a text file, applying rules and controlling a handler.
     """
+
     def __init__(self, handler):
         self.handler = handler
         self.rules = []
         self.filters = []
+
     def addRule(self, rule):
         self.rules.append(rule)
+
     def addFilter(self, pattern, name):
         def filter(block, handler):
             return re.sub(pattern, handler.sub(name), block)
+
         self.filters.append(filter)
 
     def parse(self, file):
@@ -26,14 +31,16 @@ class Parser:
                 for rule in self.rules:
                     if rule.condition(block):
                         last = rule.action(block,
-                               self.handler)
+                                           self.handler)
                         if last: break
         self.handler.end('document')
+
 
 class BasicTextParser(Parser):
     """
     A specific Parser that adds rules and filters in its constructor.
     """
+
     def __init__(self, handler):
         Parser.__init__(self, handler)
         self.addRule(ListRule())
@@ -46,9 +53,10 @@ class BasicTextParser(Parser):
         self.addFilter(r'(http://[\.a-zA-Z/]+)', 'url')
         self.addFilter(r'([\.a-zA-Z]+@[\.a-zA-Z]+[a-zA-Z]+)', 'mail')
 
+
 handler = HTMLRenderer()
 parser = BasicTextParser(handler)
 
-sys.stdin=open('test_input.txt')
+sys.stdin = open('test_input.txt')
 parser.parse(sys.stdin)
 sys.stdin.close()
