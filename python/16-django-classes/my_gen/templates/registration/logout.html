@@ -1,0 +1,19 @@
+<!-- logout.html (raspi.tw project) -->
+{% extends "base.html" %}
+{% block title %}二级网址免费申请{% endblock %}
+{% block content %}
+<div class='container'>
+{% for message in messages %}
+    <div class='alert alert-{{message.tags}}'>{{ message }}</div>
+{% endfor %}
+    <div class='row'>
+        <div class='col-md-12'>
+            <div class='panel panel-default'>
+                <div class='panel-heading' align=center>
+                    <h3>成功注销</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

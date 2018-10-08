@@ -1,0 +1,29 @@
+{% load staticfiles %}
+<!-- base.html (rasp.tw project) -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>{% block title %}{% endblock %}</title>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="{% static 'css/bootstrap.min.css'%}">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="{% static 'css/bootstrap-theme.min.css' %}">
+
+<script   src="{% static 'js/jquery-2.2.4.min.js' %}"  ></script>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<style>
+h1, h2, h3, h4, h5, p, div {
+    font-family: 微软雅黑;
+}
+</style>
+</head>
+<body>
+{% include "header.html" %}
+{% block content %}{% endblock %}
+{% include "footer.html" %}
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!-- registration_form.html (gen.min-huang.com project) -->
+{% extends "base.html" %}
+{% block title %}注册名言佳句产生器{% endblock %}
+{% block content %}
+    <div class='container'>
+    {% for message in messages %}
+        <div class='alert alert-{{ message.tags }}'>{{ message }}</div>
+    {% endfor %}
+    <div class='row'>
+    <div class='col-md-12'>
+        <div class='panel panel-default'>
+            <div class='panel-heading' align=center>
+                <h3>注册名言佳句产生器</h3>
+            </div>
+        </div>
+        <form action='.' method='POST'>
+            {% csrf_token %}
+            <table>
+                {{ form.as_table }}
+            </table>
+
+            <div class='panel panel-default'>
+                <div class='panel-heading' align=center>
+                    <h3><input type='submit' value='注册'><br/></h3>
+                </div>
+            </div>
+        </form>
+    </div>
+{% endblock %}
