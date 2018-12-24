@@ -3,3 +3,6 @@ Flask-Bootstrap==3.3.7.1
 Flask-WTF==0.14.2
 Flask-Script==2.0.6
 flask-moment==0.6.0
+SQLAlchemy==1.2.13
+Flask-Migrate==2.3.0
+Flask-Mail==0.9.1
