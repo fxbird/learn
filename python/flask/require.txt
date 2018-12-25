@@ -6,3 +6,4 @@ flask-moment==0.6.0
 SQLAlchemy==1.2.13
 Flask-Migrate==2.3.0
 Flask-Mail==0.9.1
+Flask-Login==0.4.1

@@ -1,4 +1,5 @@
 from . import db
+from flask.ext.login import UserMixin
 
 class Role(db.Model):
     __tablename__='roles'
