@@ -1,0 +1,373 @@
+{
+  "lab": {
+    "version": "",
+    "georestriction":false,
+    "deployedgeos_ibm":"A01,J01,E01,U01,L01",
+    "deployedgeos_bp":"AP,EM,NA,LA",
+    "sso_enable": "false",
+	"solr_url": "mkmpgz2122.cloud.dst.ibm.com:2181",
+	"failover_solr_url": "http://mkmpgz2122.cloud.dst.ibm.com:8983",
+    "solr_client_type":"H",
+    "mail_jndi_session": "",
+    "email_url_ibm": "https://inmbzp4174.in.dst.ibm.com/services/epricer/v2/ibm/?quoteid=",
+    "template_path_w3": "",
+    "template_path_www": "",
+    "generic_email_from": "IBM@ibm.com",
+	"generic_email_display_name":"IBM e-Pricer",
+    "bppc_path":"/web/server_root/data/services/epricer/v2/bppc",
+    "downloadbid_summary_path":"/web/server_root/data/services/epricer/v2/templates",
+    "promo_db_staging_url":"http://a25zeidbcl0251g.toronto.ca.ibm.com/services/epricer/wwpromos.nsf",
+    "mail_connection_smtp_hostname" : "emea.relay.ibm.com",
+	"mail.connection.smtp.port" : "25",
+	"jmslogappender":false,
+	"filelogappender":true,
+	"jmslog4jconfig":"config/jms-log4j.properties",
+	"filelog4jconfig":"config/log4j.properties",
+	"quoteser_path":"c:/ser/",
+	"shutdowngeolist_bp":"",
+	"shutdowngeolist_ibm":"",
+	"type_ahead_service_url":"http://w3-services1.w3-969.ibm.com/myw3/unified-profile/v1/search/user?callback=JSON_CALLBACK&searchConfig=optimized_search&query=",
+	"copra_tss_mtp_date":"2018-06-01",
+	log:[
+		{
+			"module":"bp",
+			"targetjmsconnectionjndi":"jms/BPLogConnectionFactory",
+			"targetmq":"jms/BPLogQueue"
+		},
+		{
+			"module":"ibm",
+			"targetjmsconnectionjndi":"jms/IBMLogConnectionFactory",
+			"targetmq":"jms/IBMLogQueue"
+		},
+		{
+			"module":"auth",
+			"targetjmsconnectionjndi":"jms/AuthLogConnectionFactory",
+			"targetmq":"jms/IBMLogQueue"
+		},
+		{
+			"module":"settings",
+			"targetjmsconnectionjndi":"jms/SettingsLogConnectionFactory",
+			"targetmq":"jms/IBMLogQueue"
+		}						
+	],
+    "mq": [
+      {
+        "interface": "icms",
+        "host": "INMBZP4120.in.dst.ibm.com",
+        "port": "1415",
+        "channel": "LAB.CLIENT",
+        "timeout": "0",
+        "targetQ": "",
+        "senderQ": "EPRV2.EPRICT.REMOTE",
+        "receiverQ": "EPRV2.EPRICT.REMOTE",
+        "ackQ": "EPRV2.EPRIAT.REMOTE",
+        "triggerQ": "",
+        "deadLetterQ": "",
+        "timeToLive": "0",
+        "ccsid" : "939",
+        "qname" : "INMBMQV2",
+        "persistent" : "1"
+      },
+      {
+        "interface": "sterling",
+        "host": "INMBZP4120.in.dst.ibm.com",
+        "port": "1415",
+        "channel": "LAB.CLIENT",
+        "timeout": "0",
+        "senderQ": "STERLING.EPRICERV2.DSG.OUT",
+        "receiverQ": "STERLING.EPRICERV2.DSG.IN",
+        "ccsid" : "939",
+        "qname" : "INMBMQV2",
+        "persistent" : "1"
+      }
+      ],
+    "ws_consumes": [
+      {
+        "interface": "psatdealreg",
+        "endUrl": "http://epricerservices-uat.presalesadvisor.com/MercatoDealRegistration.svc",
+        "userid": "ePricer",
+        "password": "fL8Xd@s9.fD"
+      },
+      {
+        "interface": "nadealreg",
+        "endUrl": "http://sit-stgpwblueweb.lexington.ibm.com:9084/DealRegWebService/DealRegServiceService",
+         "userid": "epricerr@us.ibm.com",
+        "password": "bxe0ftjs"               
+      },
+      
+       {
+        "interface": "ipat",
+        "endUrl": "https://iebbeta-gz.cdtdp.toronto.ca.ibm.com/tools/ipat/chw",
+        "userid": "AVFT1R744@nomail.relay.ibm.com",
+        "password": "welcome2epricer"
+      },
+      {
+        "interface": "rdc",
+        "endUrl": "https://ibmrrdc1.portsmouth.uk.ibm.com/RDCServices/services/EPSRServiceBSI",
+        "userid": "notneeded",
+        "password": "notneeded"
+      },
+      {
+        "interface": "bret",
+        "endUrl": "https://w3preprod-bz.ieb.ibm.com:443/bret/epricer",
+        "userid": "epricerr@us.ibm.com",
+        "password": "bxe0ftjs"
+      },
+      {
+        "interface": "wi",
+        "endUrl": "https://wiwasimcl.toronto.ca.ibm.com/account/idservices/ait/api/services/WebIdentity",
+        "secondaryUrl" : "https://wiwasimcl.toronto.ca.ibm.com/account/idservices/ait/api/services/WebIdentity",
+        "userid": "ePricerLab",
+        "password": "ePr1cerR7",
+        "certificate" : "witest"
+      },
+      {
+        "interface": "nextgen",
+        "endUrl": "https://w3preprod-gz.ieb.ibm.com/mapi/profilemgmt/test/ibmidprofileait/v2/users",
+        "secondaryUrl" : "https://w3preprod-gz.ieb.ibm.com/mapi/profilemgmt/test/ibmidprofileait/v2/users",
+        "clientid": "b6d38f13-cfbf-4aac-8b20-dad493a9b36d",
+        "clientsecret": "S1gN6qT5sT6nS6vX8sF0vM8bE3lP6tM7dD6mC2bR4jE6dQ4dA7"
+      },
+      {
+        "interface": "wwcps",
+        "endUrl": "https://q2c.w3-969.ibm.com:3005/api/epricer",
+        "secondaryUrl" : "https://q2c.w3-969.ibm.com:3005/api/epricer",
+        "auth": "Basic d3djcHNAdXMuaWJtLmNvbTp0ZXN0NHRzc3ByaWNpbmd3ZWJzZXJ2",
+        "timeout": "30000",
+        "simulate" :false
+      }
+    ],
+    "ws_provides": [
+      {
+        "ws_name": "retrievequoteservice",
+        "clients": [
+          {
+            "client_id": "I",
+            "client_name": "ipat",
+            "auth_users": "ipat4chw@us.ibm.com",
+            "auth_profile": "ipat4chw@us.ibm.com"
+          },
+          {
+            "client_id": "R",
+            "client_name": "LA CBS",
+            "auth_users": "srsadmin@us.ibm.com",
+            "auth_profile": "srsadmin@us.ibm.com"
+          },
+          {
+            "client_id": "G",
+            "client_name": "GAP",
+            "auth_users": "C-EUEB897@nomail.relay.ibm.com",
+            "auth_profile": "C-EUEB897@nomail.relay.ibm.com"
+          },
+          {
+            "client_id": "B",
+            "client_name": "BRET",
+            "auth_users": "brat01@us.ibm.com",
+            "auth_profile": "brat01@us.ibm.com"
+          },
+          {
+            "client_id": "M",
+            "client_name": "BMS",
+            "auth_users": "LVHE63613@nomail.relay.ibm.com",
+            "auth_profile": "LVHE63613@nomail.relay.ibm.com"
+          },   
+          {
+            "client_id": "U",
+            "client_name": "eBlueSuit",
+            "auth_users": "BLUESUIT@jp.ibm.com",
+            "auth_profile": "BLUESUIT@jp.ibm.com"
+          },
+          {
+            "client_id": "E",
+            "client_name": "iERP",
+            "auth_users": "ierpept@us.ibm.com",
+            "auth_profile": "ierpept@us.ibm.com"           
+          },
+          {
+            "client_id": "C",
+            "client_name": "WWCPS",
+            "auth_users": "wwcps@us.ibm.com",
+            "auth_profile": "wwcps@us.ibm.com"           
+          }                                                 
+        ]
+      }
+    ],
+    "pushnotification": {
+      "url": "",
+      "elligible_statuses": ""
+    }
+  },
+  "cdt": {
+    "version": "",
+    "georestriction":false,
+    "deployedgeos_ibm":"A01,J01,E01,U01,L01",
+    "deployedgeos_bp":"AP,EM,NA,LA",
+    "sso_enable": "false",
+    "log_level": "DEBUG",
+    "solr_url": "INMBZP4174.in.dst.ibm.com:2181",
+    "mail_jndi_session": "",
+    "email_url_ibm": "",
+    "template_path_w3": "",
+    "template_path_www": "",
+    "mail_connection_smtp_hostname" : "",
+	"mail.connection.smtp.port" : "",
+	"jmslogappender":false,
+	"filelogappender":true,
+	"jmslog4jconfig":"config/jms-log4j.properties",
+	"filelog4jconfig":"config/log4j.properties",
+	"quoteser_path":"",
+	log:[
+		{
+			"module":"bp",
+			"targetjmsconnectionjndi":"jms/BPLogConnectionFactory",
+			"targetmq":"jms/BPLogQueue"
+		},
+		{
+			"module":"ibm",
+			"targetjmsconnectionjndi":"jms/IBMLogConnectionFactory",
+			"targetmq":"jms/IBMLogQueue"
+		},
+		{
+			"module":"auth",
+			"targetjmsconnectionjndi":"jms/AuthLogConnectionFactory",
+			"targetmq":"jms/AuthLogQueue"
+		},
+		{
+			"module":"settings",
+			"targetjmsconnectionjndi":"jms/SettingsLogConnectionFactory",
+			"targetmq":"jms/SettingsLogQueue"
+		}						
+	],	
+    "mq": [
+      {
+        "interface": "icms",
+        "host": "INMBZP4120.in.dst.ibm.com",
+        "port": "1415",
+        "channel": "LAB.CLIENT",
+        "timeout": "0",
+        "targetQ": "",
+        "senderQ": "EPRV2.EPRICT.REMOTE",
+        "receiverQ": "EPRV2.EPRICT.REMOTE",
+        "ackQ": "EPRV2.EPRIAT.REMOTE",
+        "triggerQ": "",
+        "deadLetterQ": "",
+        "timeToLive": "0",
+        "ccsid" : "939",
+        "qname" : "INMBMQV2",
+        "persistent" : "1"
+      }
+    ],
+    "ws_consumes": [
+      {
+        "interface": "",
+        "endUrl": "",
+        "userid": "",
+        "password": ""
+      }
+    ],
+     "ws_provides": [
+      {
+        "ws_name": "retrievequoteservice",
+        "clients": [
+          {
+            "client_id": "I",
+            "client_name": "ipat",
+            "auth_users": "ipat4chw@us.ibm.com",
+            "auth_profile": "ipat4chw@us.ibm.com"
+          },
+          {
+            "client_id": "R",
+            "client_name": "LA CBS",
+            "auth_users": "srsadmin@us.ibm.com",
+            "auth_profile": "srsadmin@us.ibm.com"
+          },
+          {
+            "client_id": "G",
+            "client_name": "GAP",
+            "auth_users": "C-EUEB897@nomail.relay.ibm.com",
+            "auth_profile": "C-EUEB897@nomail.relay.ibm.com"
+          },
+          {
+            "client_id": "B",
+            "client_name": "BRET",
+            "auth_users": "brat01@us.ibm.com",
+            "auth_profile": "brat01@us.ibm.com"
+          },
+          {
+            "client_id": "M",
+            "client_name": "BMS",
+            "auth_users": "LVHE63613@nomail.relay.ibm.com",
+            "auth_profile": "LVHE63613@nomail.relay.ibm.com"
+          },   
+          {
+            "client_id": "U",
+            "client_name": "eBlueSuit",
+            "auth_users": "BLUESUIT@jp.ibm.com",
+            "auth_profile": "BLUESUIT@jp.ibm.com"
+          }                                              
+        ]
+      }
+    ],
+    "pushnotification": {
+      "url": "",
+      "elligible_statuses": ""
+    }
+  },
+  "prod": {
+    "version": "",
+    "georestriction":false,
+    "deployedgeos_ibm":"A01,J01,E01,U01,L01",
+    "deployedgeos_bp":"AP,EM,NA,LA",
+    "sso_enable": "false",
+    "log_level": "DEBUG",
+    "solr_url": "INMBZP4174.in.dst.ibm.com:2181",
+    "mail_jndi_session": "",
+    "email_url_ibm": "",
+    "template_path_w3": "",
+    "template_path_www": "",
+     "mail_connection_smtp_hostname" : "",
+	"mail.connection.smtp.port" : "",
+	"quoteser_path":"",
+    "mq": [
+      {
+        "interface": "",
+        "host": "",
+        "port": "",
+        "channel": "",
+        "timeout": "",
+        "targetQ": "",
+        "senderQ": "",
+        "receiverQ": "",
+        "ackQ": "",
+        "triggerQ": "",
+        "deadLetterQ": "",
+        "timeToLive": ""
+      }
+    ],
+    "ws_consumes": [
+      {
+        "interface": "",
+        "endUrl": "",
+        "userid": "",
+        "password": ""
+      }
+    ],
+    "ws_provides": [
+      {
+        "ws_name": "",
+        "clients": [
+          {
+            "client_id": "",
+            "client_name": "",
+            "auth_users": "",
+            "auth_profile": ""
+          }
+        ]
+      }
+    ],
+    "pushnotification": {
+      "url": "",
+      "elligible_statuses": ""
+    }
+  }
+}
