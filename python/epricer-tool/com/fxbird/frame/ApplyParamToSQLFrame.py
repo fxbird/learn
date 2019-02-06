@@ -8,7 +8,7 @@ class ApplyParamToSQLFrame(wx.Frame):
 
     def initUI(self):
         self.panel = MyPanel(self)
-        self.SetSize(1000,900)
+        self.SetSize(1000,600)
 
 class MyPanel(wx.Panel):
     def __init__(self, parent):
@@ -19,7 +19,7 @@ class MyPanel(wx.Panel):
 
         firstSizer = wx.BoxSizer(wx.HORIZONTAL)
         firstSizer.Add(wx.StaticText(self, label='SQL:'), proportion=1,border=5)
-        self.txtSql = wx.TextCtrl(self,size=(900,350), style=wx.TE_MULTILINE|wx.TE_RICH|wx.TE_PROCESS_ENTER)
+        self.txtSql = wx.TextCtrl(self,size=(900,150), style=wx.TE_MULTILINE|wx.TE_RICH|wx.TE_PROCESS_ENTER)
         self.txtSql.SetFont(font)
         firstSizer.Add(self.txtSql,flag= wx.EXPAND | wx.ALL,border=5,)
         allSizer.Add(firstSizer,border=5)
@@ -34,7 +34,7 @@ class MyPanel(wx.Panel):
 
         thirdSizer = wx.BoxSizer(wx.HORIZONTAL)
         thirdSizer.Add(wx.StaticText(self, label='Result:'),border=5)
-        self.txtResult = wx.TextCtrl(self,size=(900,350), style=wx.TE_MULTILINE|wx.TE_RICH|wx.TE_PROCESS_ENTER)
+        self.txtResult = wx.TextCtrl(self,size=(900,150), style=wx.TE_MULTILINE|wx.TE_RICH|wx.TE_PROCESS_ENTER)
         self.txtResult.SetFont(font)
         thirdSizer.Add(self.txtResult,border=5)
         allSizer.Add(thirdSizer,border=5)
