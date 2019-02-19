@@ -5,6 +5,7 @@ import java.util.Enumeration;
 import java.util.HashMap;
 import java.util.Iterator;
 
+import com.ibm.services.epricer.framework.log.Console;
 import com.ibm.services.epricer.framework.rest.DataBean;
 import com.ibm.services.epricer.framework.rest.Helper;
 
@@ -29,7 +30,7 @@ public class Env extends DataBean implements EnvConstant {
 	}
 
 	private synchronized static Env createEnv() {
-		// TODO Auto-generated method stub
+		
 		if(env!=null) {
 			return env;
 		}
@@ -42,8 +43,8 @@ public class Env extends DataBean implements EnvConstant {
 			envName = (envName == null) ? System.getProperty("env.name") : envName;
 			envPath = (envPath == null) ? System.getProperty("env.config.path") : envPath;
 
-			System.out.println("envName = "+envName);
-			System.out.println("envPath = "+envPath);
+			Console.debug(Env.class.getName(), "envName = "+envName);
+			Console.debug(Env.class.getName(),"envPath = "+envPath);
 			env = buildEnv(envName,envPath);			
 			return env;
 		}
@@ -52,7 +53,6 @@ public class Env extends DataBean implements EnvConstant {
 	private static Env buildEnv(String envName, String envPath) {
 		
 		Env env = new Env();
-		// TODO Auto-generated method stub
 		String envJson = Helper.readAllFromFile(envPath);
 		DataBean envConfigs = Helper.parseJSON(envJson);
 		DataBean envDataBean = envConfigs.getStructure(envName);

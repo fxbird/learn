@@ -7,10 +7,9 @@ import com.ibm.services.epricer.framework.log.Console;
 import com.ibm.services.epricer.param.SolrQueryBean;
 import com.ibm.services.patterns.callback.CallBackRegistry;
 
-public class ContextApp {
-	
+import java.io.File;
 
-	
+public class ContextApp {
 	private static ContextApp instance;
 	private static ApplicationContext applicationContext;
 	
@@ -18,8 +17,9 @@ public class ContextApp {
 	private static SolrQueryBean solrQueryBean;
 	
 	private static CallBackRegistry registry;
-	private long lastCreateEnvTs;
-	private int update_intvl_sec=60;
+//	private long lastCreateEnvTs;
+//	private int update_intvl_sec=1000;
+	private long lastModifyEnvTime;
 	
 
     protected ContextApp() {
@@ -49,14 +49,24 @@ public class ContextApp {
     }
     
     public Env getEnvConfig() {
-    	long currTs=System.currentTimeMillis();
-    	if ((currTs - lastCreateEnvTs)>update_intvl_sec*1000){
+    	/*if ((currTs - lastCreateEnvTs)>update_intvl_sec*1000){
     		Console.debug(ContextApp.class.getName(), "Interval for reading env-config reached, rereading ...");
     		envConfig = Env.getEnv();
     		lastCreateEnvTs=System.currentTimeMillis();
-    	}
-    	
-    	return envConfig;
+    	}*/
+
+    	synchronized ("abc"){
+			String envPath = System.getProperty("env.config.path").replaceAll("\\\\","/");
+			long modifyDatetime=new File(envPath).lastModified();
+			if (lastModifyEnvTime!=modifyDatetime){
+				lastModifyEnvTime=modifyDatetime;
+				Console.debug(ContextApp.class.getName(), "Env-config.json was changed, rereading ...");
+				envConfig = Env.getEnv();
+			}
+
+			return envConfig;
+		}
+
     }
 
 	public SolrQueryBean getSolrQueryBean() {
