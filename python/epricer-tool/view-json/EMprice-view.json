@@ -1,0 +1,2740 @@
+{
+  "views": [
+    {
+      "id": "A",
+      "label": "All",
+      "list": [
+        "T",
+        "B",
+        "BC",
+        "CT"
+      ]
+    },
+    {
+      "id": "C",
+      "label": "Component",
+      "list": [
+        "C"
+      ]
+    },
+    {
+      "id": "D",
+      "label": "Division code",
+      "list": [
+        "D"
+      ]
+    },
+    {
+      "id": "T",
+      "label": "Total",
+      "list": [
+        "T",
+        "C"
+      ]
+    }
+  ],
+  "defaultviewid": "A",
+  "showpaginationview": "false",
+  "tables": {
+    "OO,I,C": {
+      "role": "OO",
+      "qtype": "I",
+      "viewid": "C",
+      "tabview": [
+        {
+          "labelid": "identifier",
+          "sequence": 1,
+          "tdwidth": 140
+        },
+        {
+          "labelid": "quantity",
+          "sequence": 2,
+          "tdwidth": 70,
+          "isnumber": true
+        },
+        {
+          "labelid": "ql",
+          "sequence": 3,
+          "tdwidth": 70
+        },
+        {
+          "labelid": "proddescription",
+          "sequence": 4,
+          "tdwidth": 150
+        },
+        {
+          "labelid": "listprice",
+          "sequence": 5,
+          "tdwidth": 120,
+          "isnumber": true
+        },
+        {
+          "labelid": "bprequestedprice",
+          "sequence": 6,
+          "tdwidth": 120,
+          "isnumber": true
+        },
+        {
+          "labelid": "bprequesteddisc",
+          "sequence": 7,
+          "tdwidth": 120,
+          "isnumber": true
+        },
+        {
+          "labelid": "frozenflag",
+          "sequence": 8,
+          "tdwidth": 80
+        },
+        {
+          "labelid": "approvedprice",
+          "sequence": 9,
+          "tdwidth": 120,
+          "isnumber": true
+        },
+        {
+          "labelid": "approveddisc",
+          "sequence": 10,
+          "tdwidth": 100
+        },
+        {
+          "labelid": "optimalprice",
+          "sequence": 11,
+          "tdwidth": 120,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "optimaldisc",
+          "sequence": 12,
+          "tdwidth": 100,
+          "isnumber": true
+        },
+        {
+          "labelid": "level0",
+          "sequence": 13,
+          "tdwidth": 120,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "level0disc",
+          "sequence": 14,
+          "tdwidth": 100,
+          "isnumber": true
+        }
+      ],
+      "additionalItems": [
+        {
+          "labelid": "listprice",
+          "sequence": 1,
+          "isnumber": true
+        },
+        {
+          "labelid": "entitleprice",
+          "sequence": 2,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "targetprice",
+          "sequence": 3,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "grossprofitdisc",
+          "sequence": 4,
+          "isnumber": true
+        },
+        {
+          "labelid": "configname",
+          "sequence": 5
+        },
+        {
+          "labelid": "bestprice",
+          "sequence": 6,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "level0",
+          "sequence": 7,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "levela",
+          "sequence": 8,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "level4",
+          "sequence": 9,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "level5",
+          "sequence": 10,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "level6",
+          "sequence": 11,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "level7",
+          "sequence": 12,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "level8",
+          "sequence": 13,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "loa",
+          "sequence": 14
+        },
+        {
+          "labelid": "adjhighprice",
+          "sequence": 15,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "adjlowprice",
+          "sequence": 16,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "manualpriceadjustmentflag",
+          "sequence": 17
+        }
+      ]
+    },
+    "OO,I,D": {
+      "role": "OO",
+      "qtype": "I",
+      "viewid": "D",
+      "tabview": [
+        {
+          "labelid": "identifier",
+          "sequence": 1,
+          "tdwidth": 140
+        },
+        {
+          "labelid": "quantity",
+          "sequence": 2,
+          "tdwidth": 70,
+          "isnumber": true
+        },
+        {
+          "labelid": "ql",
+          "sequence": 3,
+          "tdwidth": 70
+        },
+        {
+          "labelid": "proddescription",
+          "sequence": 4,
+          "tdwidth": 150
+        },
+        {
+          "labelid": "listprice",
+          "sequence": 5,
+          "tdwidth": 120,
+          "isnumber": true
+        },
+        {
+          "labelid": "bprequestedprice",
+          "sequence": 6,
+          "tdwidth": 120,
+          "isnumber": true
+        },
+        {
+          "labelid": "bprequesteddisc",
+          "sequence": 7,
+          "tdwidth": 120,
+          "isnumber": true
+        },
+        {
+          "labelid": "frozenflag",
+          "sequence": 8,
+          "tdwidth": 80
+        },
+        {
+          "labelid": "approvedprice",
+          "sequence": 9,
+          "tdwidth": 120,
+          "isnumber": true
+        },
+        {
+          "labelid": "approveddisc",
+          "sequence": 10,
+          "tdwidth": 100
+        },
+        {
+          "labelid": "optimalprice",
+          "sequence": 11,
+          "tdwidth": 120,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "optimaldisc",
+          "sequence": 12,
+          "tdwidth": 100,
+          "isnumber": true
+        },
+        {
+          "labelid": "level0",
+          "sequence": 13,
+          "tdwidth": 120,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "level0disc",
+          "sequence": 14,
+          "tdwidth": 100,
+          "isnumber": true
+        }
+      ],
+      "additionalItems": [
+        {
+          "labelid": "listprice",
+          "sequence": 1,
+          "isnumber": true
+        },
+        {
+          "labelid": "entitleprice",
+          "sequence": 2,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "targetprice",
+          "sequence": 3,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "grossprofitdisc",
+          "sequence": 4,
+          "isnumber": true
+        },
+        {
+          "labelid": "configname",
+          "sequence": 5
+        },
+        {
+          "labelid": "bestprice",
+          "sequence": 6,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "level0",
+          "sequence": 7,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "levela",
+          "sequence": 8,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "level4",
+          "sequence": 9,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "level5",
+          "sequence": 10,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "level6",
+          "sequence": 11,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "level7",
+          "sequence": 12,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "level8",
+          "sequence": 13,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "loa",
+          "sequence": 14
+        },
+        {
+          "labelid": "adjhighprice",
+          "sequence": 15,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "adjlowprice",
+          "sequence": 16,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "manualpriceadjustmentflag",
+          "sequence": 17
+        }
+      ]
+    },
+    "OO,I,A": {
+      "role": "OO",
+      "qtype": "I",
+      "viewid": "A",
+      "tabview": [
+        {
+          "labelid": "identifier",
+          "sequence": 1,
+          "tdwidth": 140
+        },
+        {
+          "labelid": "quantity",
+          "sequence": 2,
+          "tdwidth": 70,
+          "isnumber": true
+        },
+        {
+          "labelid": "ql",
+          "sequence": 3,
+          "tdwidth": 70
+        },
+        {
+          "labelid": "proddescription",
+          "sequence": 4,
+          "tdwidth": 150
+        },
+        {
+          "labelid": "listprice",
+          "sequence": 5,
+          "tdwidth": 120,
+          "isnumber": true
+        },
+        {
+          "labelid": "bprequestedprice",
+          "sequence": 6,
+          "tdwidth": 120,
+          "isnumber": true
+        },
+        {
+          "labelid": "bprequesteddisc",
+          "sequence": 7,
+          "tdwidth": 120,
+          "isnumber": true
+        },
+        {
+          "labelid": "frozenflag",
+          "sequence": 8,
+          "tdwidth": 80
+        },
+        {
+          "labelid": "approvedprice",
+          "sequence": 9,
+          "tdwidth": 120,
+          "isnumber": true
+        },
+        {
+          "labelid": "approveddisc",
+          "sequence": 10,
+          "tdwidth": 100
+        },
+        {
+          "labelid": "optimalprice",
+          "sequence": 11,
+          "tdwidth": 120,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "optimaldisc",
+          "sequence": 12,
+          "tdwidth": 100,
+          "isnumber": true
+        },
+        {
+          "labelid": "level0",
+          "sequence": 13,
+          "tdwidth": 120,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "level0disc",
+          "sequence": 14,
+          "tdwidth": 100,
+          "isnumber": true
+        }
+      ],
+      "additionalItems": [
+        {
+          "labelid": "listprice",
+          "sequence": 1,
+          "isnumber": true
+        },
+        {
+          "labelid": "entitleprice",
+          "sequence": 2,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "targetprice",
+          "sequence": 3,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "grossprofitdisc",
+          "sequence": 4,
+          "isnumber": true
+        },
+        {
+          "labelid": "configname",
+          "sequence": 5
+        },
+        {
+          "labelid": "bestprice",
+          "sequence": 6,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "level0",
+          "sequence": 7,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "levela",
+          "sequence": 8,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "level4",
+          "sequence": 9,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "level5",
+          "sequence": 10,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "level6",
+          "sequence": 11,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "level7",
+          "sequence": 12,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "level8",
+          "sequence": 13,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "loa",
+          "sequence": 14
+        },
+        {
+          "labelid": "adjhighprice",
+          "sequence": 15,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "adjlowprice",
+          "sequence": 16,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "manualpriceadjustmentflag",
+          "sequence": 17
+        }
+      ]
+    },
+    "OO,I,T": {
+      "role": "OO",
+      "qtype": "I",
+      "viewid": "T",
+      "tabview": [
+        {
+          "labelid": "identifier",
+          "sequence": 1,
+          "tdwidth": 140
+        },
+        {
+          "labelid": "quantity",
+          "sequence": 2,
+          "tdwidth": 70,
+          "isnumber": true
+        },
+        {
+          "labelid": "ql",
+          "sequence": 3,
+          "tdwidth": 70
+        },
+        {
+          "labelid": "proddescription",
+          "sequence": 4,
+          "tdwidth": 150
+        },
+        {
+          "labelid": "listprice",
+          "sequence": 5,
+          "tdwidth": 120,
+          "isnumber": true
+        },
+        {
+          "labelid": "bprequestedprice",
+          "sequence": 6,
+          "tdwidth": 120,
+          "isnumber": true
+        },
+        {
+          "labelid": "bprequesteddisc",
+          "sequence": 7,
+          "tdwidth": 120,
+          "isnumber": true
+        },
+        {
+          "labelid": "frozenflag",
+          "sequence": 8,
+          "tdwidth": 80
+        },
+        {
+          "labelid": "approvedprice",
+          "sequence": 9,
+          "tdwidth": 120,
+          "isnumber": true
+        },
+        {
+          "labelid": "approveddisc",
+          "sequence": 10,
+          "tdwidth": 100
+        },
+        {
+          "labelid": "optimalprice",
+          "sequence": 11,
+          "tdwidth": 120,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "optimaldisc",
+          "sequence": 12,
+          "tdwidth": 100,
+          "isnumber": true
+        },
+        {
+          "labelid": "level0",
+          "sequence": 13,
+          "tdwidth": 120,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "level0disc",
+          "sequence": 14,
+          "tdwidth": 100,
+          "isnumber": true
+        }
+      ],
+      "additionalItems": [
+        {
+          "labelid": "listprice",
+          "sequence": 1,
+          "isnumber": true
+        },
+        {
+          "labelid": "entitleprice",
+          "sequence": 2,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "targetprice",
+          "sequence": 3,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "grossprofitdisc",
+          "sequence": 4,
+          "isnumber": true
+        },
+        {
+          "labelid": "configname",
+          "sequence": 5
+        },
+        {
+          "labelid": "bestprice",
+          "sequence": 6,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "level0",
+          "sequence": 7,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "levela",
+          "sequence": 8,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "level4",
+          "sequence": 9,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "level5",
+          "sequence": 10,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "level6",
+          "sequence": 11,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "level7",
+          "sequence": 12,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "level8",
+          "sequence": 13,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "loa",
+          "sequence": 14
+        },
+        {
+          "labelid": "adjhighprice",
+          "sequence": 15,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "adjlowprice",
+          "sequence": 16,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "manualpriceadjustmentflag",
+          "sequence": 17
+        }
+      ]
+    },
+    "PR,I,C": {
+      "role": "PR",
+      "qtype": "I",
+      "viewid": "C",
+      "tabview": [
+        {
+          "labelid": "identifier",
+          "sequence": 1,
+          "tdwidth": 100
+        },
+        {
+          "labelid": "proddescription",
+          "sequence": 2,
+          "tdwidth": 175
+        },
+        {
+          "labelid": "revenuedivisioncode",
+          "sequence": 3,
+          "tdwidth": 35
+        },
+        {
+          "labelid": "quantity",
+          "sequence": 4,
+          "tdwidth": 50,
+          "isnumber": true
+        },
+        {
+          "labelid": "listprice",
+          "sequence": 5,
+          "tdwidth": 105,
+          "isnumber": true
+        },
+        {
+          "labelid": "approvedprice",
+          "sequence": 6,
+          "tdwidth": 110,
+          "isnumber": true
+        },
+        {
+          "labelid": "approveddisc",
+          "sequence": 7,
+          "tdwidth": 80,
+          "isnumber": true
+        },
+        {
+          "labelid": "frozenflag",
+          "sequence": 8,
+          "tdwidth": 60
+        },
+        {
+          "labelid": "optimalprice",
+          "sequence": 9,
+          "tdwidth": 105,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "level2",
+          "sequence": 10,
+          "tdwidth": 105,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "level3",
+          "sequence": 11,
+          "tdwidth": 105,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "gpdiscbmc",
+          "sequence": 12,
+          "tdwidth": 75,
+          "isnumber": true
+        },
+        {
+          "labelid": "gpdisctmc",
+          "sequence": 13,
+          "tdwidth": 70,
+          "isnumber": true
+        },
+        {
+          "labelid": "bmc",
+          "sequence": 14,
+          "tdwidth": 95,
+          "isnumber": true
+        },
+        {
+          "labelid": "tmc",
+          "sequence": 15,
+          "tdwidth": 95,
+          "isnumber": true
+        },
+        {
+          "labelid": "deleglevel",
+          "sequence": 16,
+          "tdwidth": 100
+        },
+        {
+          "labelid": "carveout",
+          "sequence": 17,
+          "tdwidth": 75,
+          "isnumber": true
+        }
+      ],
+      "additionalItems": [
+        {
+          "labelid": "agogprice",
+          "sequence": 1,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "bprequestedprice",
+          "sequence": 2,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "level0",
+          "sequence": 3,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "level1",
+          "sequence": 4,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "level4",
+          "sequence": 5,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "bestprice",
+          "sequence": 6,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "optimalprice",
+          "sequence": 7,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "adjhighprice",
+          "sequence": 8,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "adjlowprice",
+          "sequence": 9,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "targetprice",
+          "sequence": 10,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "manualpriceadjustmentflag",
+          "sequence": 11
+        }
+      ]
+    },
+    "PR,I,D": {
+      "role": "PR",
+      "qtype": "I",
+      "viewid": "D",
+      "tabview": [
+        {
+          "labelid": "identifier",
+          "sequence": 1,
+          "tdwidth": 100
+        },
+        {
+          "labelid": "proddescription",
+          "sequence": 2,
+          "tdwidth": 175
+        },
+        {
+          "labelid": "revenuedivisioncode",
+          "sequence": 3,
+          "tdwidth": 35
+        },
+        {
+          "labelid": "quantity",
+          "sequence": 4,
+          "tdwidth": 50,
+          "isnumber": true
+        },
+        {
+          "labelid": "listprice",
+          "sequence": 5,
+          "tdwidth": 105,
+          "isnumber": true
+        },
+        {
+          "labelid": "approvedprice",
+          "sequence": 6,
+          "tdwidth": 110,
+          "isnumber": true
+        },
+        {
+          "labelid": "approveddisc",
+          "sequence": 7,
+          "tdwidth": 80,
+          "isnumber": true
+        },
+        {
+          "labelid": "frozenflag",
+          "sequence": 8,
+          "tdwidth": 60
+        },
+        {
+          "labelid": "optimalprice",
+          "sequence": 9,
+          "tdwidth": 105,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "level2",
+          "sequence": 10,
+          "tdwidth": 105,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "level3",
+          "sequence": 11,
+          "tdwidth": 105,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "gpdiscbmc",
+          "sequence": 12,
+          "tdwidth": 75,
+          "isnumber": true
+        },
+        {
+          "labelid": "gpdisctmc",
+          "sequence": 13,
+          "tdwidth": 70,
+          "isnumber": true
+        },
+        {
+          "labelid": "bmc",
+          "sequence": 14,
+          "tdwidth": 95,
+          "isnumber": true
+        },
+        {
+          "labelid": "tmc",
+          "sequence": 15,
+          "tdwidth": 95,
+          "isnumber": true
+        },
+        {
+          "labelid": "deleglevel",
+          "sequence": 16,
+          "tdwidth": 100
+        },
+        {
+          "labelid": "carveout",
+          "sequence": 17,
+          "tdwidth": 75,
+          "isnumber": true
+        }
+      ],
+      "additionalItems": [
+        {
+          "labelid": "agogprice",
+          "sequence": 1,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "bprequestedprice",
+          "sequence": 2,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "level0",
+          "sequence": 3,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "level1",
+          "sequence": 4,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "level4",
+          "sequence": 5,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "bestprice",
+          "sequence": 6,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "optimalprice",
+          "sequence": 7,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "adjhighprice",
+          "sequence": 8,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "adjlowprice",
+          "sequence": 9,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "targetprice",
+          "sequence": 10,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "manualpriceadjustmentflag",
+          "sequence": 11
+        }
+      ]
+    },
+    "PR,I,A": {
+      "role": "PR",
+      "qtype": "I",
+      "viewid": "A",
+      "tabview": [
+        {
+          "labelid": "identifier",
+          "sequence": 1,
+          "tdwidth": 100
+        },
+        {
+          "labelid": "proddescription",
+          "sequence": 2,
+          "tdwidth": 175
+        },
+        {
+          "labelid": "revenuedivisioncode",
+          "sequence": 3,
+          "tdwidth": 35
+        },
+        {
+          "labelid": "quantity",
+          "sequence": 4,
+          "tdwidth": 50,
+          "isnumber": true
+        },
+        {
+          "labelid": "listprice",
+          "sequence": 5,
+          "tdwidth": 105,
+          "isnumber": true
+        },
+        {
+          "labelid": "approvedprice",
+          "sequence": 6,
+          "tdwidth": 110,
+          "isnumber": true
+        },
+        {
+          "labelid": "approveddisc",
+          "sequence": 7,
+          "tdwidth": 80,
+          "isnumber": true
+        },
+        {
+          "labelid": "frozenflag",
+          "sequence": 8,
+          "tdwidth": 60
+        },
+        {
+          "labelid": "optimalprice",
+          "sequence": 9,
+          "tdwidth": 105,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "level2",
+          "sequence": 10,
+          "tdwidth": 105,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "level3",
+          "sequence": 11,
+          "tdwidth": 105,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "gpdiscbmc",
+          "sequence": 12,
+          "tdwidth": 75,
+          "isnumber": true
+        },
+        {
+          "labelid": "gpdisctmc",
+          "sequence": 13,
+          "tdwidth": 70,
+          "isnumber": true
+        },
+        {
+          "labelid": "bmc",
+          "sequence": 14,
+          "tdwidth": 95,
+          "isnumber": true
+        },
+        {
+          "labelid": "tmc",
+          "sequence": 15,
+          "tdwidth": 95,
+          "isnumber": true
+        },
+        {
+          "labelid": "deleglevel",
+          "sequence": 16,
+          "tdwidth": 100
+        },
+        {
+          "labelid": "carveout",
+          "sequence": 17,
+          "tdwidth": 75,
+          "isnumber": true
+        }
+      ],
+      "additionalItems": [
+        {
+          "labelid": "agogprice",
+          "sequence": 1,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "bprequestedprice",
+          "sequence": 2,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "level0",
+          "sequence": 3,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "level1",
+          "sequence": 4,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "level4",
+          "sequence": 5,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "bestprice",
+          "sequence": 6,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "optimalprice",
+          "sequence": 7,
+          "isnumber": true,
+          "hasdiscount": true
+        }	,
+        {
+          "labelid": "adjhighprice",
+          "sequence": 8,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "adjlowprice",
+          "sequence": 9,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "targetprice",
+          "sequence": 10,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "manualpriceadjustmentflag",
+          "sequence": 11
+        }
+      ]
+    },
+    "PR,I,T": {
+      "role": "PR",
+      "qtype": "I",
+      "viewid": "T",
+      "tabview": [
+        {
+          "labelid": "identifier",
+          "sequence": 1,
+          "tdwidth": 100
+        },
+        {
+          "labelid": "proddescription",
+          "sequence": 2,
+          "tdwidth": 175
+        },
+        {
+          "labelid": "revenuedivisioncode",
+          "sequence": 3,
+          "tdwidth": 35
+        },
+        {
+          "labelid": "quantity",
+          "sequence": 4,
+          "tdwidth": 50,
+          "isnumber": true
+        },
+        {
+          "labelid": "listprice",
+          "sequence": 5,
+          "tdwidth": 105,
+          "isnumber": true
+        },
+        {
+          "labelid": "approvedprice",
+          "sequence": 6,
+          "tdwidth": 110,
+          "isnumber": true
+        },
+        {
+          "labelid": "approveddisc",
+          "sequence": 7,
+          "tdwidth": 80,
+          "isnumber": true
+        },
+        {
+          "labelid": "frozenflag",
+          "sequence": 8,
+          "tdwidth": 60
+        },
+        {
+          "labelid": "optimalprice",
+          "sequence": 9,
+          "tdwidth": 105,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "level2",
+          "sequence": 10,
+          "tdwidth": 105,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "level3",
+          "sequence": 11,
+          "tdwidth": 105,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "gpdiscbmc",
+          "sequence": 12,
+          "tdwidth": 75,
+          "isnumber": true
+        },
+        {
+          "labelid": "gpdisctmc",
+          "sequence": 13,
+          "tdwidth": 70,
+          "isnumber": true
+        },
+        {
+          "labelid": "bmc",
+          "sequence": 14,
+          "tdwidth": 95,
+          "isnumber": true
+        },
+        {
+          "labelid": "tmc",
+          "sequence": 15,
+          "tdwidth": 95,
+          "isnumber": true
+        },
+        {
+          "labelid": "deleglevel",
+          "sequence": 16,
+          "tdwidth": 100
+        },
+        {
+          "labelid": "carveout",
+          "sequence": 17,
+          "tdwidth": 75,
+          "isnumber": true
+        }
+      ],
+      "additionalItems": [
+        {
+          "labelid": "agogprice",
+          "sequence": 1,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "bprequestedprice",
+          "sequence": 2,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "level0",
+          "sequence": 3,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "level1",
+          "sequence": 4,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "level4",
+          "sequence": 5,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "bestprice",
+          "sequence": 6,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "optimalprice",
+          "sequence": 7,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "adjhighprice",
+          "sequence": 8,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "adjlowprice",
+          "sequence": 9,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "targetprice",
+          "sequence": 10,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "manualpriceadjustmentflag",
+          "sequence": 11
+        }
+      ]
+    },
+    "PR,B,C": {
+      "role": "PR",
+      "qtype": "B",
+      "viewid": "C",
+      "tabview": [
+        {
+          "labelid": "identifier",
+          "sequence": 1,
+          "tdwidth": 100
+        },
+        {
+          "labelid": "proddescription",
+          "sequence": 2,
+          "tdwidth": 175
+        },
+        {
+          "labelid": "revenuedivisioncode",
+          "sequence": 3,
+          "tdwidth": 35
+        },
+        {
+          "labelid": "quantity",
+          "sequence": 4,
+          "tdwidth": 50,
+          "isnumber": true
+        },
+        {
+          "labelid": "listprice",
+          "sequence": 5,
+          "tdwidth": 105,
+          "isnumber": true
+        },
+        {
+          "labelid": "approvedprice",
+          "sequence": 6,
+          "tdwidth": 110,
+          "isnumber": true
+        },
+        {
+          "labelid": "approveddisc",
+          "sequence": 7,
+          "tdwidth": 80,
+          "isnumber": true
+        },
+        {
+          "labelid": "frozenflag",
+          "sequence": 8,
+          "tdwidth": 60
+        },
+        {
+          "labelid": "optimalprice",
+          "sequence": 9,
+          "tdwidth": 105,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "level2",
+          "sequence": 10,
+          "tdwidth": 105,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "level3",
+          "sequence": 11,
+          "tdwidth": 105,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "gpdiscbmc",
+          "sequence": 12,
+          "tdwidth": 75,
+          "isnumber": true
+        },
+        {
+          "labelid": "gpdisctmc",
+          "sequence": 13,
+          "tdwidth": 70,
+          "isnumber": true
+        },
+        {
+          "labelid": "bmc",
+          "sequence": 14,
+          "tdwidth": 95,
+          "isnumber": true
+        },
+        {
+          "labelid": "tmc",
+          "sequence": 15,
+          "tdwidth": 95,
+          "isnumber": true
+        },
+        {
+          "labelid": "deleglevel",
+          "sequence": 16,
+          "tdwidth": 100
+        },
+        {
+          "labelid": "carveout",
+          "sequence": 17,
+          "tdwidth": 75,
+          "isnumber": true
+        }
+      ],
+      "additionalItems": [
+        {
+          "labelid": "agogprice",
+          "sequence": 1,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "valueseller",
+          "sequence": 2,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "bpenduserprice",
+          "sequence": 3,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "enduserprice",
+          "sequence": 4,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "p4vproposedprice",
+          "sequence": 5,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "level0",
+          "sequence": 6,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "level1",
+          "sequence": 7,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "level4",
+          "sequence": 8,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "bestprice",
+          "sequence": 9,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "optimalprice",
+          "sequence": 10,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "adjhighprice",
+          "sequence": 11,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "adjlowprice",
+          "sequence": 12,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "targetprice",
+          "sequence": 13,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "manualpriceadjustmentflag",
+          "sequence": 14
+        }
+      ]
+    },
+    "PR,B,D": {
+      "role": "PR",
+      "qtype": "B",
+      "viewid": "D",
+      "tabview": [
+        {
+          "labelid": "identifier",
+          "sequence": 1,
+          "tdwidth": 100
+        },
+        {
+          "labelid": "proddescription",
+          "sequence": 2,
+          "tdwidth": 175
+        },
+        {
+          "labelid": "revenuedivisioncode",
+          "sequence": 3,
+          "tdwidth": 35
+        },
+        {
+          "labelid": "quantity",
+          "sequence": 4,
+          "tdwidth": 50,
+          "isnumber": true
+        },
+        {
+          "labelid": "listprice",
+          "sequence": 5,
+          "tdwidth": 105,
+          "isnumber": true
+        },
+        {
+          "labelid": "approvedprice",
+          "sequence": 6,
+          "tdwidth": 110,
+          "isnumber": true
+        },
+        {
+          "labelid": "approveddisc",
+          "sequence": 7,
+          "tdwidth": 80,
+          "isnumber": true
+        },
+        {
+          "labelid": "frozenflag",
+          "sequence": 8,
+          "tdwidth": 60
+        },
+        {
+          "labelid": "optimalprice",
+          "sequence": 9,
+          "tdwidth": 105,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "level2",
+          "sequence": 10,
+          "tdwidth": 105,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "level3",
+          "sequence": 11,
+          "tdwidth": 105,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "gpdiscbmc",
+          "sequence": 12,
+          "tdwidth": 75,
+          "isnumber": true
+        },
+        {
+          "labelid": "gpdisctmc",
+          "sequence": 13,
+          "tdwidth": 70,
+          "isnumber": true
+        },
+        {
+          "labelid": "bmc",
+          "sequence": 14,
+          "tdwidth": 95,
+          "isnumber": true
+        },
+        {
+          "labelid": "tmc",
+          "sequence": 15,
+          "tdwidth": 95,
+          "isnumber": true
+        },
+        {
+          "labelid": "deleglevel",
+          "sequence": 16,
+          "tdwidth": 100
+        },
+        {
+          "labelid": "carveout",
+          "sequence": 17,
+          "tdwidth": 75,
+          "isnumber": true
+        }
+      ],
+      "additionalItems": [
+        {
+          "labelid": "agogprice",
+          "sequence": 1,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "valueseller",
+          "sequence": 2,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "bpenduserprice",
+          "sequence": 3,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "enduserprice",
+          "sequence": 4,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "p4vproposedprice",
+          "sequence": 5,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "level0",
+          "sequence": 6,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "level1",
+          "sequence": 7,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "level4",
+          "sequence": 8,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "bestprice",
+          "sequence": 9,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "optimalprice",
+          "sequence": 10,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "adjhighprice",
+          "sequence": 11,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "adjlowprice",
+          "sequence": 12,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "targetprice",
+          "sequence": 13,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "manualpriceadjustmentflag",
+          "sequence": 14
+        }
+      ]
+    },
+    "PR,B,T": {
+      "role": "PR",
+      "qtype": "B",
+      "viewid": "T",
+      "tabview": [
+        {
+          "labelid": "identifier",
+          "sequence": 1,
+          "tdwidth": 100
+        },
+        {
+          "labelid": "proddescription",
+          "sequence": 2,
+          "tdwidth": 175
+        },
+        {
+          "labelid": "revenuedivisioncode",
+          "sequence": 3,
+          "tdwidth": 35
+        },
+        {
+          "labelid": "quantity",
+          "sequence": 4,
+          "tdwidth": 50,
+          "isnumber": true
+        },
+        {
+          "labelid": "listprice",
+          "sequence": 5,
+          "tdwidth": 105,
+          "isnumber": true
+        },
+        {
+          "labelid": "approvedprice",
+          "sequence": 6,
+          "tdwidth": 110,
+          "isnumber": true
+        },
+        {
+          "labelid": "approveddisc",
+          "sequence": 7,
+          "tdwidth": 80,
+          "isnumber": true
+        },
+        {
+          "labelid": "frozenflag",
+          "sequence": 8,
+          "tdwidth": 60
+        },
+        {
+          "labelid": "optimalprice",
+          "sequence": 9,
+          "tdwidth": 105,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "level2",
+          "sequence": 10,
+          "tdwidth": 105,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "level3",
+          "sequence": 11,
+          "tdwidth": 105,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "gpdiscbmc",
+          "sequence": 12,
+          "tdwidth": 75,
+          "isnumber": true
+        },
+        {
+          "labelid": "gpdisctmc",
+          "sequence": 13,
+          "tdwidth": 70,
+          "isnumber": true
+        },
+        {
+          "labelid": "bmc",
+          "sequence": 14,
+          "tdwidth": 95,
+          "isnumber": true
+        },
+        {
+          "labelid": "tmc",
+          "sequence": 15,
+          "tdwidth": 95,
+          "isnumber": true
+        },
+        {
+          "labelid": "deleglevel",
+          "sequence": 16,
+          "tdwidth": 100
+        },
+        {
+          "labelid": "carveout",
+          "sequence": 17,
+          "tdwidth": 75,
+          "isnumber": true
+        }
+      ],
+      "additionalItems": [
+        {
+          "labelid": "agogprice",
+          "sequence": 1,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "valueseller",
+          "sequence": 2,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "bpenduserprice",
+          "sequence": 3,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "enduserprice",
+          "sequence": 4,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "p4vproposedprice",
+          "sequence": 5,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "level0",
+          "sequence": 6,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "level1",
+          "sequence": 7,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "level4",
+          "sequence": 8,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "bestprice",
+          "sequence": 9,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "optimalprice",
+          "sequence": 10,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "adjhighprice",
+          "sequence": 11,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "adjlowprice",
+          "sequence": 12,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "targetprice",
+          "sequence": 13,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "manualpriceadjustmentflag",
+          "sequence": 14
+        }
+      ]
+    },
+    "PR,B,A": {
+      "role": "PR",
+      "qtype": "B",
+      "viewid": "A",
+      "tabview": [
+        {
+          "labelid": "identifier",
+          "sequence": 1,
+          "tdwidth": 100
+        },
+        {
+          "labelid": "proddescription",
+          "sequence": 2,
+          "tdwidth": 175
+        },
+        {
+          "labelid": "revenuedivisioncode",
+          "sequence": 3,
+          "tdwidth": 35
+        },
+        {
+          "labelid": "quantity",
+          "sequence": 4,
+          "tdwidth": 50,
+          "isnumber": true
+        },
+        {
+          "labelid": "listprice",
+          "sequence": 5,
+          "tdwidth": 105,
+          "isnumber": true
+        },
+        {
+          "labelid": "approvedprice",
+          "sequence": 6,
+          "tdwidth": 110,
+          "isnumber": true
+        },
+        {
+          "labelid": "approveddisc",
+          "sequence": 7,
+          "tdwidth": 80,
+          "isnumber": true
+        },
+        {
+          "labelid": "frozenflag",
+          "sequence": 8,
+          "tdwidth": 60
+        },
+        {
+          "labelid": "optimalprice",
+          "sequence": 9,
+          "tdwidth": 105,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "level2",
+          "sequence": 10,
+          "tdwidth": 105,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "level3",
+          "sequence": 11,
+          "tdwidth": 105,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "gpdiscbmc",
+          "sequence": 12,
+          "tdwidth": 75,
+          "isnumber": true
+        },
+        {
+          "labelid": "gpdisctmc",
+          "sequence": 13,
+          "tdwidth": 70,
+          "isnumber": true
+        },
+        {
+          "labelid": "bmc",
+          "sequence": 14,
+          "tdwidth": 95,
+          "isnumber": true
+        },
+        {
+          "labelid": "tmc",
+          "sequence": 15,
+          "tdwidth": 95,
+          "isnumber": true
+        },
+        {
+          "labelid": "deleglevel",
+          "sequence": 16,
+          "tdwidth": 100
+        },
+        {
+          "labelid": "carveout",
+          "sequence": 17,
+          "tdwidth": 75,
+          "isnumber": true
+        }
+      ],
+      "additionalItems": [
+        {
+          "labelid": "agogprice",
+          "sequence": 1,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "valueseller",
+          "sequence": 2,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "bpenduserprice",
+          "sequence": 3,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "enduserprice",
+          "sequence": 4,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "p4vproposedprice",
+          "sequence": 5,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "level0",
+          "sequence": 6,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "level1",
+          "sequence": 7,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "level4",
+          "sequence": 8,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "bestprice",
+          "sequence": 9,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "optimalprice",
+          "sequence": 10,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "adjhighprice",
+          "sequence": 11,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "adjlowprice",
+          "sequence": 12,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "targetprice",
+          "sequence": 13,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "manualpriceadjustmentflag",
+          "sequence": 14
+        }
+      ]
+    },
+    "OO,B,C": {
+      "role": "OO",
+      "qtype": "B",
+      "viewid": "C",
+      "tabview": [
+        {
+          "labelid": "identifier",
+          "sequence": 1,
+          "tdwidth": 150
+        },
+        {
+          "labelid": "quantity",
+          "sequence": 2,
+          "tdwidth": 80,
+          "isnumber": true
+        },
+        {
+          "labelid": "proddescription",
+          "sequence": 3,
+          "tdwidth": 200
+        },
+        {
+          "labelid": "listprice",
+          "sequence": 4,
+          "tdwidth": 120,
+          "isnumber": true
+        },
+        {
+          "labelid": "approvedprice",
+          "sequence": 5,
+          "tdwidth": 120,
+          "isnumber": true
+        },
+        {
+          "labelid": "approveddisc",
+          "sequence": 6,
+          "tdwidth": 80,
+          "isnumber": true
+        },
+        {
+          "labelid": "enduserprice",
+          "sequence": 7,
+          "tdwidth": 120,
+          "isnumber": true
+        },
+        {
+          "labelid": "optimalprice",
+          "sequence": 8,
+          "tdwidth": 120,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "optimaldisc",
+          "sequence": 9,
+          "tdwidth": 80,
+          "isnumber": true
+        },
+        {
+          "labelid": "level0",
+          "sequence": 10,
+          "tdwidth": 120,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "level0disc",
+          "sequence": 11,
+          "tdwidth": 80,
+          "isnumber": true
+        },
+        {
+          "labelid": "tmc",
+          "sequence": 12,
+          "tdwidth": 100,
+          "isnumber": true
+        },
+        {
+          "labelid": "gpdisctmc",
+          "sequence": 13,
+          "tdwidth": 80,
+          "isnumber": true
+        }
+      ],
+      "additionalItems": [
+        {
+          "labelid": "valueseller",
+          "sequence": 1,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "bpenduserprice",
+          "sequence": 2,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "adjhighprice",
+          "sequence": 3,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "adjlowprice",
+          "sequence": 4,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "targetprice",
+          "sequence": 5,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "level0",
+          "sequence": 6,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "manualpriceadjustmentflag",
+          "sequence": 7
+        }
+      ]
+    },
+    "OO,B,A": {
+      "role": "OO",
+      "qtype": "B",
+      "viewid": "A",
+      "tabview": [
+        {
+          "labelid": "identifier",
+          "sequence": 1,
+          "tdwidth": 150
+        },
+        {
+          "labelid": "quantity",
+          "sequence": 2,
+          "tdwidth": 80,
+          "isnumber": true
+        },
+        {
+          "labelid": "proddescription",
+          "sequence": 3,
+          "tdwidth": 200
+        },
+        {
+          "labelid": "listprice",
+          "sequence": 4,
+          "tdwidth": 120,
+          "isnumber": true
+        },
+        {
+          "labelid": "approvedprice",
+          "sequence": 5,
+          "tdwidth": 120,
+          "isnumber": true
+        },
+        {
+          "labelid": "approveddisc",
+          "sequence": 6,
+          "tdwidth": 80,
+          "isnumber": true
+        },
+        {
+          "labelid": "enduserprice",
+          "sequence": 7,
+          "tdwidth": 120,
+          "isnumber": true
+        },
+        {
+          "labelid": "optimalprice",
+          "sequence": 8,
+          "tdwidth": 120,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "optimaldisc",
+          "sequence": 9,
+          "tdwidth": 80,
+          "isnumber": true
+        },
+        {
+          "labelid": "level0",
+          "sequence": 10,
+          "tdwidth": 120,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "level0disc",
+          "sequence": 11,
+          "tdwidth": 80,
+          "isnumber": true
+        },
+        {
+          "labelid": "tmc",
+          "sequence": 12,
+          "tdwidth": 100,
+          "isnumber": true
+        },
+        {
+          "labelid": "gpdisctmc",
+          "sequence": 13,
+          "tdwidth": 80,
+          "isnumber": true
+        }
+      ],
+      "additionalItems": [
+        {
+          "labelid": "valueseller",
+          "sequence": 1,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "bpenduserprice",
+          "sequence": 2,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "adjhighprice",
+          "sequence": 3,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "adjlowprice",
+          "sequence": 4,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "targetprice",
+          "sequence": 5,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "level0",
+          "sequence": 6,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "manualpriceadjustmentflag",
+          "sequence": 7
+        }
+      ]
+    },
+    "OO,B,T": {
+      "role": "OO",
+      "qtype": "B",
+      "viewid": "T",
+      "tabview": [
+        {
+          "labelid": "identifier",
+          "sequence": 1,
+          "tdwidth": 150
+        },
+        {
+          "labelid": "quantity",
+          "sequence": 2,
+          "tdwidth": 80,
+          "isnumber": true
+        },
+        {
+          "labelid": "proddescription",
+          "sequence": 3,
+          "tdwidth": 200
+        },
+        {
+          "labelid": "listprice",
+          "sequence": 4,
+          "tdwidth": 120,
+          "isnumber": true
+        },
+        {
+          "labelid": "approvedprice",
+          "sequence": 5,
+          "tdwidth": 120,
+          "isnumber": true
+        },
+        {
+          "labelid": "approveddisc",
+          "sequence": 6,
+          "tdwidth": 80,
+          "isnumber": true
+        },
+        {
+          "labelid": "enduserprice",
+          "sequence": 7,
+          "tdwidth": 120,
+          "isnumber": true
+        },
+        {
+          "labelid": "optimalprice",
+          "sequence": 8,
+          "tdwidth": 120,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "optimaldisc",
+          "sequence": 9,
+          "tdwidth": 80,
+          "isnumber": true
+        },
+        {
+          "labelid": "level0",
+          "sequence": 10,
+          "tdwidth": 120,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "level0disc",
+          "sequence": 11,
+          "tdwidth": 80,
+          "isnumber": true
+        },
+        {
+          "labelid": "tmc",
+          "sequence": 12,
+          "tdwidth": 100,
+          "isnumber": true
+        },
+        {
+          "labelid": "gpdisctmc",
+          "sequence": 13,
+          "tdwidth": 80,
+          "isnumber": true
+        }
+      ],
+      "additionalItems": [
+        {
+          "labelid": "valueseller",
+          "sequence": 1,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "bpenduserprice",
+          "sequence": 2,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "adjhighprice",
+          "sequence": 3,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "adjlowprice",
+          "sequence": 4,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "targetprice",
+          "sequence": 5,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "level0",
+          "sequence": 6,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "manualpriceadjustmentflag",
+          "sequence": 7
+        }
+      ]
+    },
+    "OO,B,D": {
+      "role": "OO",
+      "qtype": "B",
+      "viewid": "D",
+      "tabview": [
+        {
+          "labelid": "identifier",
+          "sequence": 1,
+          "tdwidth": 150
+        },
+        {
+          "labelid": "quantity",
+          "sequence": 2,
+          "tdwidth": 80,
+          "isnumber": true
+        },
+        {
+          "labelid": "proddescription",
+          "sequence": 3,
+          "tdwidth": 200
+        },
+        {
+          "labelid": "listprice",
+          "sequence": 4,
+          "tdwidth": 120,
+          "isnumber": true
+        },
+        {
+          "labelid": "approvedprice",
+          "sequence": 5,
+          "tdwidth": 120,
+          "isnumber": true
+        },
+        {
+          "labelid": "approveddisc",
+          "sequence": 6,
+          "tdwidth": 80,
+          "isnumber": true
+        },
+        {
+          "labelid": "enduserprice",
+          "sequence": 7,
+          "tdwidth": 120,
+          "isnumber": true
+        },
+        {
+          "labelid": "optimalprice",
+          "sequence": 8,
+          "tdwidth": 120,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "optimaldisc",
+          "sequence": 9,
+          "tdwidth": 80,
+          "isnumber": true
+        },
+        {
+          "labelid": "level0",
+          "sequence": 10,
+          "tdwidth": 120,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "level0disc",
+          "sequence": 11,
+          "tdwidth": 80,
+          "isnumber": true
+        },
+        {
+          "labelid": "tmc",
+          "sequence": 12,
+          "tdwidth": 100,
+          "isnumber": true
+        },
+        {
+          "labelid": "gpdisctmc",
+          "sequence": 13,
+          "tdwidth": 80,
+          "isnumber": true
+        }
+      ],
+      "additionalItems": [
+        {
+          "labelid": "valueseller",
+          "sequence": 1,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "bpenduserprice",
+          "sequence": 2,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "adjhighprice",
+          "sequence": 3,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "adjlowprice",
+          "sequence": 4,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "targetprice",
+          "sequence": 5,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "level0",
+          "sequence": 6,
+          "isnumber": true,
+          "hasdiscount": true
+        },
+        {
+          "labelid": "manualpriceadjustmentflag",
+          "sequence": 7
+        }
+      ]
+    }
+  }
+}
