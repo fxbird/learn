@@ -823,6 +823,7 @@
         },
         {
           "labelid": "optimalprice",
+
           "sequence": 9,
           "tdwidth": 105,
           "isnumber": true,
