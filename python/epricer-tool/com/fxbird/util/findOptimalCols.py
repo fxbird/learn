@@ -8,8 +8,9 @@ from openpyxl.styles import Font
 #     path='c:/temp/col-json/EMprice-view.json'
 from openpyxl.styles.colors import RED
 
-basePath = 'M:/My-Documents/programming/github/learn/python/epricer-tool/view-json/'
-jsonPathList = ['EMprice-view.json', 'JPprice-view.json', 'NAprice-view.json', 'LAprice-view.json' ]
+# basePath = 'M:/My-Documents/programming/github/learn/python/epricer-tool/view-json/'
+basePath = 'C:/documents/programming/java/lib/github/learn/python/epricer-tool/view-json/'
+jsonPathList = ['EMprice-view.json', 'JPprice-view.json','APprice-view.json', 'NAprice-view.json', 'LAprice-view.json','CNprice-view.json' ]
 
 
 def parseOptAdditionalCols(jsonFilePath):
@@ -74,10 +75,12 @@ def parseOptCols(jsonFilePath):
 
 
 def genExcel(jsonFilePathArr, outFilePath):
+    fontSize=13
     excelCols = 'ABCDEFGHIJKLMNOPQRSTUVW'
     wb = Workbook()
     wb.remove_sheet(wb.get_sheet_by_name(wb.get_sheet_names()[0]))
     keywords = ['adjhighprice', 'adjlowprice', 'optimal']
+    normalFont=Font(size=fontSize)
 
     for jsonFilePath in jsonFilePathArr:
         jsonFile = open(jsonFilePath, 'r')
@@ -87,7 +90,8 @@ def genExcel(jsonFilePathArr, outFilePath):
 
         colIdx = 0
         sheet['A1'] = 'No.'
-        maxRow = 2
+        maxDefaultRow = 2
+
         for name, value in jsonObj['tables'].items():
             rowIdx = 1
             colIdx += 1
@@ -95,18 +99,49 @@ def genExcel(jsonFilePathArr, outFilePath):
 
             for colItem in value['tabview']:
                 rowIdx += 1
-                if maxRow < rowIdx:
-                    maxRow = rowIdx
-                sheet[excelCols[colIdx] + str(rowIdx)] = colItem['labelid']
+                if maxDefaultRow < rowIdx:
+                    maxDefaultRow = rowIdx
+                sheet[excelCols[colIdx] + str(rowIdx)] = '%s(%s)' % (colItem['labelid'],colItem['sequence'])
+                sheet[excelCols[colIdx] + str(rowIdx)].font=normalFont
                 for kw in keywords:
                     if (colItem['labelid'].find(kw) > -1):
-                        sheet[excelCols[colIdx] + str(rowIdx)].font = Font(color=RED, bold=True)
+                        sheet[excelCols[colIdx] + str(rowIdx)].font = Font(color=RED, bold=True,size=fontSize)
 
         for i in range(0, colIdx + 1):
-            sheet[excelCols[i] + '1'].font = Font(bold=True)
+            sheet[excelCols[i] + '1'].font = Font(bold=True,size=fontSize)
 
-        for r in range(2, maxRow + 1):
+        for r in range(2, maxDefaultRow + 1):
             sheet['A' + str(r)] = r - 1
+            sheet['A' + str(r)].font=normalFont
+
+        startExtraRow=maxDefaultRow+2
+        #generate additional columns
+        colStart=0
+        maxGroupExtraRow=0
+
+        for name, value in jsonObj['tables'].items():
+            rowStart=maxDefaultRow+1
+            colStart += 1
+            groupRow = 0
+
+            for colItem in value['additionalItems']:
+                groupRow+=1
+                if maxGroupExtraRow<groupRow:
+                    maxGroupExtraRow=groupRow
+                rowStart+=1
+                sheet[excelCols[colStart]+str(rowStart)]= '%s(%s)' % (colItem['labelid'],colItem['sequence'])
+                sheet[excelCols[colStart]+str(rowStart)].font=normalFont
+
+
+        row=0
+        for i in range(startExtraRow,startExtraRow+maxGroupExtraRow):
+            row+=1
+            sheet['A'+str(i)]=row
+            sheet['A'+str(i)].font=normalFont
+
+        sheet['B'+str(maxDefaultRow+1)]='Addtional Columns'
+        sheet['B'+str(maxDefaultRow+1)].font=Font(color=RED, bold=True,size=fontSize)
+
 
     wb.save(outFilePath)
 
@@ -116,9 +151,8 @@ for p in jsonPathList:
     jsonFilePath = basePath + p
     excelOutPath = basePath + 'allCols.xlsx'
 
-    parseOptAdditionalCols(basePath + p)
-
+    # parseOptAdditionalCols(basePath + p)
     # parseOptCols(basePath + p)
 
-    # jsonFilePathArr = [basePath + p for p in jsonPathList]
-    # genExcel(jsonFilePathArr, excelOutPath)
+    jsonFilePathArr = [basePath + p for p in jsonPathList]
+    genExcel(jsonFilePathArr, excelOutPath)
